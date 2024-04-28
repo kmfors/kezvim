@@ -8,14 +8,16 @@ Github: https://github.com/kmfors/kezvim
 
 ## Introduce
 
-主要基于neovim，使用lua语言进行配置，实现一个简易的IDE。
+本项目主要基于[neovim](https://github.com/neovim/neovim/releases)编辑器，使用[lazyvim](https://www.lazyvim.org/)作为配置框架，添加众多插件和自定义配置来改造nvim，实现一个简易的IDE。
+但目前还不具有LSP特性功能，本人研究有限，具体可以看[coc.nvim](https://github.com/neoclide/coc.nvim)的配置使用。
 
-主要实现的功能有：
+主要功能有：
 - 背景主题、状态栏、buffer的美化配置
 - c、cpp、cmake语言的语法分析高亮
 - 浮动终端功能
 - 文件树目录展示功能
 - 括号补全、缩进动态效果
+- 下载好的插件可随配置文件一起打包迁移至其他不同的linux系统使用
 
 
 ## Install
@@ -32,7 +34,7 @@ export NVIM={nerovim-bin-path}
 export PATH=$PATH:$NVIM
 ```
 
-## 自定义使用命令：
+## Custom command
 - 浮动终端开启与关闭：`ctrl+\` 
 - 文件树的开启与关闭：`<F2>`
 - 鼠标启用：`<F4>`， 关闭`<F5>`
