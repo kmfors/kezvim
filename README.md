@@ -27,7 +27,7 @@ Github: https://github.com/kmfors/kezvim
 
 1. 运行`set.sh`完成初始配置（仅设置一次，已配置的请略过）
 2. 请在`.profile`或者`.bashrc`中设置以下的环境变量，配置好后请`source`一下
-3. 之后直接nvim命令进行插件下载
+3. 之后直接nvim命令进行插件下载（执行`:Lazy`命令可以查看插件下载成功或失败）
 
 ```shell
 export NVIM={nerovim-bin-path}
