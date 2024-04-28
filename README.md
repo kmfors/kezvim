@@ -41,13 +41,9 @@ export PATH=$PATH:$NVIM
 
 Tips:
 1. 一定要确认`~`目录下的`.config`与`.local`中的文件是否需要备份！
-2. nvim背景主题的设置在`.config/nvim/lua/start.lua`文件里，将color注释取消，重新打开文件即可实现主题切换，主要的主题有：
-    - carbonfox
-    - dawnfox
-    - dayfox
-    - duskfox
-    - nightfox
-    - nordfox
-    - terafox
-    - gruvbox
-3、具体的配置请看config，根据自己的需求自定义配置
+2. nvim背景主题的设置在`.config/nvim/lua/start.lua`文件里，将color注释取消，重新打开文件即可实现主题切换。
+3. 具体的配置请看config，根据自己的需求自定义配置。
+
+主要的主题有：
+
+carbonfox、dawnfox、dayfox、duskfox、nightfox、nordfox、terafox、gruvbox
