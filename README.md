@@ -32,18 +32,20 @@ export NVIM={nerovim-bin-path}
 export PATH=$PATH:$NVIM
 ```
 
-常用命令：
+## 自定义使用命令：
 - 浮动终端开启与关闭：`ctrl+\` 
 - 文件树的开启与关闭：`<F2>`
 - 鼠标启用：`<F4>`， 关闭`<F5>`
 - 窗口切换：`w`
 - buffer切换：`Tab`
 
-Tips:
+## Tips:
 1. 一定要确认`~`目录下的`.config`与`.local`中的文件是否需要备份！
 2. nvim背景主题的设置在`.config/nvim/lua/start.lua`文件里，将color注释取消，重新打开文件即可实现主题切换。
 3. 具体的配置请看config，根据自己的需求自定义配置。
 
-主要的主题有：
+配置的主题有：
 
 carbonfox、dawnfox、dayfox、duskfox、nightfox、nordfox、terafox、gruvbox
+
+主题效果请查看[nightfox.nvim](https://github.com/EdenEast/nightfox.nvim)。
