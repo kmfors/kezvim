@@ -8,6 +8,11 @@ vim.scriptencoding = 'utf-8'
 opt.encoding = 'utf-8'
 opt.fileencoding = 'utf-8'
 
+--opt.signcolumn = "yes"        -- 开启符合标记列
+
+-- nvim刷新时间(ms)
+opt.updatetime = 300
+
 -- 关闭鼠标
 vim.cmd([[set mouse=]])
 
@@ -95,7 +100,6 @@ vim.opt.background = 'dark'
 opt.ignorecase = true 			-- 忽略大小写
 opt.smartcase = true
 
---opt.signcolumn = "yes"        -- 开启符合标记列
 
 -- 右下角显示当前光标位置(默认开启)
 opt.ruler = true

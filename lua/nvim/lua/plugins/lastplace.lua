@@ -1,21 +1,14 @@
 return {
     ------------------------------- 打开文件后停留在原来的位置 ----------------------------
-
-    {
-        "ethanholz/nvim-lastplace",
-        event = "BufRead",
-        config = function()
-            require("nvim-lastplace").setup({
-                lastplace_ignore_buftype = { "quickfix", "nofile", "help" },
-                lastplace_ignore_filetype = {
-                    "gitcommit", "gitrebase", "svn", "hgcommit",
-                },
-                lastplace_open_folds = true,
-            })
-        end,
-    },
-
-
-
-
+    "ethanholz/nvim-lastplace",
+    event = "BufRead",
+    config = function()
+        require("nvim-lastplace").setup({
+            lastplace_ignore_buftype = { "quickfix", "nofile", "help" },
+            lastplace_ignore_filetype = {
+                "gitcommit", "gitrebase", "svn", "hgcommit",
+            },
+            lastplace_open_folds = true,
+        })
+    end,
 }
