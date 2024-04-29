@@ -41,6 +41,15 @@ export PATH=$PATH:$NVIM
 - 窗口切换：`w`
 - buffer切换：`Tab`
 
+git功能命令：
+- 文件历史当前分支： `:DiffviewFileHistory`
+- 文件历史当前文件： `:DiffviewFileHistory %`
+- 查看对比：`:DiffviewOpen HEAD~2`
+- 关闭对比：`:DiffviewClose`
+- 查看\关闭git提交信息：`:GitBlameToggle`
+
+更多命令请查看[diffview.nvim](https://github.com/sindrets/diffview.nvim)、[git-blame.nvim](https://github.com/f-person/git-blame.nvim)。
+
 ## Tips:
 1. 一定要确认`~`目录下的`.config`与`.local`中的文件是否需要备份！
 2. nvim背景主题的设置在`.config/nvim/lua/start.lua`文件里，将color注释取消，重新打开文件即可实现主题切换。
