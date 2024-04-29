@@ -9,7 +9,7 @@ Github: https://github.com/kmfors/kezvim
 ## Introduce
 
 本项目主要基于[neovim](https://github.com/neovim/neovim/releases)编辑器，使用[lazyvim](https://www.lazyvim.org/)作为配置框架，添加众多插件和自定义配置来改造nvim，实现一个简易的IDE。
-具体可以看[coc.nvim](https://github.com/neoclide/coc.nvim)的配置使用。
+具体可以看[coc.nvim](https://github.com/neoclide/coc.nvim)的配置使用，若不想使用具备LSP功能的kezvim可以切换到[main](https://github.com/kmfors/kezvim/tree/main)分支下。
 
 主要功能有：
 - 背景主题、状态栏、buffer的美化配置
