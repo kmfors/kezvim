@@ -9,7 +9,7 @@ Github: https://github.com/kmfors/kezvim
 ## Introduce
 
 本项目主要基于[neovim](https://github.com/neovim/neovim/releases)编辑器，使用[lazyvim](https://www.lazyvim.org/)作为配置框架，添加众多插件和自定义配置来改造nvim，实现一个简易的IDE。
-但目前还不具有LSP特性功能，本人研究有限，具体可以看[coc.nvim](https://github.com/neoclide/coc.nvim)的配置使用。
+但本分支目前不具有LSP功能，可以切换到[main-pro](https://github.com/kmfors/kezvim/tree/main-pro)分支下有实现LSP功能，具体可以看[coc.nvim](https://github.com/neoclide/coc.nvim)的配置使用。
 
 主要功能有：
 - 背景主题、状态栏、buffer的美化配置
@@ -35,6 +35,7 @@ export PATH=$PATH:$NVIM
 ```
 
 ## Custom command
+常用命令：
 - 浮动终端开启与关闭：`ctrl+\` 
 - 文件树的开启与关闭：`<F2>`
 - 鼠标启用：`<F4>`， 关闭`<F5>`
