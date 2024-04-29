@@ -18,6 +18,7 @@ Github: https://github.com/kmfors/kezvim
 - 文件树目录展示功能
 - 括号补全、缩进动态效果
 - 下载好的插件可随配置文件一起打包迁移至其他不同的linux系统使用
+- git的diff查看与blame代码提交信息查看
 
 
 ## Install
