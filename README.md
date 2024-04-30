@@ -28,15 +28,22 @@ Github: https://github.com/kmfors/kezvim
 使用步骤：
 
 1. 运行`set.sh`完成初始配置（仅设置一次，已配置的请略过）
-2. coc.nvim的运行是基于clangd服务器与nodejs的，所以请准备好[clangd](https://github.com/clangd/clangd/releases)与[nodejs](https://nodejs.org/en/download)的安装
+2. coc.nvim的运行是需要nodejs配置的，所以请准备好[nodejs](https://nodejs.org/en/download)的安装
 2. 请在`.profile`或者`.bashrc`中设置以下的环境变量，配置好后请`source`一下
 3. 之后直接nvim命令进行插件下载（执行`:Lazy`命令可以查看插件下载成功或失败）
+4. C/C++的代码补全需要[clangd-server](https://github.com/clangd/clangd/releases)，请准备好它。
 
 ```shell
 export NVIM={nerovim-bin-path}
 export CLANGD={clangd-server-bin-path}
 export NODEJS={nodejs-bin-path}
 export PATH=$PATH:$NVIM:$CLANGD:$NODEJS
+```
+cocnvim的语言插件安装（语言支持的插件安装，并不是语言服务的安装）：
+
+```vim
+# 安装json、c++、cmake的插件
+:CocInstall coc-json coc-clangd coc-cmake
 ```
 
 ## Custom command
