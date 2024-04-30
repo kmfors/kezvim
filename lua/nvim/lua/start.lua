@@ -13,6 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("config.options")
 require("config.keymaps")
+require("config.cocnvim")
 require("lazy").setup("plugins")
 
 -- 设置背景主题
