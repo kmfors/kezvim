@@ -46,8 +46,8 @@ vim.opt.inccommand = 'split'
 vim.opt.breakindent = true
 
 -- 设置每个缩进级别使用的空格数
-opt.tabstop = 4
-opt.shiftwidth = 4
+opt.tabstop = 2
+opt.shiftwidth = 2
 opt.expandtab = true
 
 -- 自动缩进

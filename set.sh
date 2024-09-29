@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # 检查目标目录是否存在，如果不存在则创建
-mkdir -p ~/.config
-mkdir -p ~/.local
+mkdir -p ~/.config/nvim
+mkdir -p ~/.local/share/nvim
 
 
 # 提示用户是否继续删除操作
@@ -17,15 +17,14 @@ answer=$(echo "$answer" | tr '[:upper:]' '[:lower:]')
 # 判断用户输入是否为y，如果是则执行删除操作，否则退出脚本
 if [ "$answer" = "y" ]; then
     echo "Deleting..."
-    rm -rf ~/.config/* ~/.local/* ~/.cache
+    rm -rf ~/.config/nvim/* ~/.local/share/nvim/* ~/.local/state/nvim/* ~/.cache
 else
     echo "Exiting..."
     exit 0
 fi
 
 
-# 拷贝lua与local文件夹下的内容到目标目录
-cp -r ./lua/* ~/.config/
-#cp -r ./local/* ~/.local/
+cp -r ./config/nvim/* ~/.config/nvim 
+cp -r ./local/nvim/* ~/.local/share/nvim
 
 echo "kezvim is set success!"
