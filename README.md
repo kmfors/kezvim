@@ -32,6 +32,7 @@ Github: https://github.com/kmfors/kezvim
 2. 请在`.profile`或者`.bashrc`中设置以下的环境变量，配置好后请`source`一下
 3. 之后直接nvim命令进行插件下载（执行`:Lazy`命令可以查看插件下载成功或失败）
 4. C/C++的代码补全需要[clangd-server](https://github.com/clangd/clangd/releases)，请准备好它。
+5. 如果有报错，可尝试删除`~/.local/share/nvim`目录下的文件，然后重新打开nvim，重新安装插件即可。
 
 ```shell
 export NVIM={nerovim-bin-path}
@@ -53,15 +54,8 @@ cocnvim的语言插件安装（语言支持的插件安装，并不是语言服�
 - 鼠标启用：`<F4>`， 关闭`<F5>`
 - 窗口切换：`w`
 - buffer切换：`Tab`
+- 查看提交信息：`Gitsigns toggle_current_line_blame`
 
-git功能命令：
-- 文件历史当前分支： `:DiffviewFileHistory`
-- 文件历史当前文件： `:DiffviewFileHistory %`
-- 查看对比：`:DiffviewOpen HEAD~2`
-- 关闭对比：`:DiffviewClose`
-- 查看\关闭git提交信息：`:GitBlameToggle`
-
-更多命令请查看[diffview.nvim](https://github.com/sindrets/diffview.nvim)、[git-blame.nvim](https://github.com/f-person/git-blame.nvim)。
 
 ## Tips:
 1. 一定要确认`~`目录下的`.config`与`.local`中的文件是否需要备份！
@@ -70,6 +64,6 @@ git功能命令：
 
 配置的主题有：
 
-carbonfox、dawnfox、dayfox、duskfox、nightfox、nordfox、terafox、gruvbox
+carbonfox、dawnfox、dayfox、duskfox、nightfox、nordfox、terafox、tokyonight。
 
 主题效果请查看[nightfox.nvim](https://github.com/EdenEast/nightfox.nvim)。

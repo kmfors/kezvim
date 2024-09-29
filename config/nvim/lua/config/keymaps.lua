@@ -1,4 +1,3 @@
-
 -- 设置space为主键
 vim.g.mapleader = " "
 

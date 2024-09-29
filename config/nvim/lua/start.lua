@@ -1,9 +1,7 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
+    "git", "clone", "--filter=blob:none",
     "https://github.com/folke/lazy.nvim.git",
     "--branch=stable", -- latest stable release
     lazypath,
@@ -17,7 +15,6 @@ require("config.cocnvim")
 require("lazy").setup("plugins")
 
 -- 设置背景主题
---vim.cmd([[colorscheme gruvbox]])
 vim.cmd([[colorscheme carbonfox]])
+--vim.cmd[[colorscheme tokyonight-moon]]
 
-    

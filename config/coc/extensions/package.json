@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "coc-cmake": ">=0.2.2",
+    "coc-clangd": ">=0.31.0"
+  }
+}
